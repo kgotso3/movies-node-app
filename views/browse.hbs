@@ -1,0 +1,15 @@
+<div class="browse">
+
+    {{#each movies}} 
+    <div class="movie">
+        <a href="/movie/{{id}}" >
+            <div class="average" style="background-color: {{averate_vote_color}};">
+                {{averate_vote_base}}
+            </div>
+            <img src="https://image.tmdb.org/t/p/w500{{poster_path}}">
+            <h3>{{ title }}</h3>
+        </a>
+    </div>
+{{/each}}
+
+</div>

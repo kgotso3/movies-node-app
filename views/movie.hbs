@@ -1,0 +1,28 @@
+<div class="movie-view">
+
+<div class="cont">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flongwoodgardens.org%2Fsites%2Fdefault%2Ffiles%2Fhighlight_images%2F76758.jpg&f=1&nofb=1">
+    <div>
+       <h1>{{ movie.title }} <span>{{movie.release_year}}</span></h1> 
+        <h3</h3> 
+        <h1 style="background-color: {{movie.averate_vote_color}}">Rating: {{movie.vote_average}}</h3> 
+        <h1>Overview</h3> 
+        <p>{{movie.overview}}</p>
+        <h1>Genres</h3> 
+        <p>
+            {{#each movie.genres}} 
+                {{name}}
+            {{/each}}
+        </p>
+        <div>
+        <form>
+            <input type="text" placeholder="Firstname *" id="firstname">
+            <input type="text" placeholder="Surname *" id="surname">
+            <input type="text" placeholder="Email Address *" id="email">
+            <input type="text" placeholder="number *" id="number">
+            <button style="button" data-movie="{{ movie.title }} {{movie.release_year}}" id="getFilmBtn">Get film</button>
+        </form>
+    </div>
+    </div>
+</div>
+</div>
